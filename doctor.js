@@ -1,5 +1,9 @@
 import Nombre from './Nombre.js';
 export default class Doctor {
+_nombre;
+_especialidad;
+_telefono;
+_cedula;
   /**
    *
    * @param {Nombre} nombre
