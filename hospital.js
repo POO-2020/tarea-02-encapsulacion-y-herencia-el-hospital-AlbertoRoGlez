@@ -5,10 +5,16 @@ import Paciente from './paciente.js';
 import Doctor from './doctor.js';
 import Cita from './cita.js';
 export default class Hospital {
+  _nombre;
+  _direccion;
+  _doctores;
+  _citas;
   /**
    *
-   * @param {string} nombre
+   * @param {Nombre} nombre
    * @param {string} direccion
+   * @param {Array.<Doctor>} doctores
+   * @param {Array.<Cita>} citas
    */
   constructor(nombre, direccion) {
     this._nombre = nombre;

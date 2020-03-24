@@ -1,20 +1,14 @@
 import Nombre from './Nombre.js';
-export default class Doctor {
+import Pacientes from `./paciente.js`;
+class Doctor extends Pacientes {
 _nombre;
 _especialidad;
 _telefono;
 _cedula;
-  /**
-   *
-   * @param {Nombre} nombre
-   * @param {string} especialidad
-   * @param {number} telefono
-   * @param {number} cedula
-   */
-  constructor(nombre, especialidad, telefono, cedula) {
-    this._nombre = nombre;
+
+  constructor(nombre, fechaNacimiento, telefono, especialidad, cedula) {
+    super({ nombre, fechaNacimiento, telefono });
     this._especialidad = especialidad;
-    this._telefono = telefono;
     this._cedula = cedula;
   }
 
@@ -24,3 +18,5 @@ _cedula;
     }, ${this._nombre.getNombreCompleto()}, ${this._telefono}`;
   }
 }
+
+export default Doctor;

@@ -3,6 +3,10 @@ import Tiempo from './Tiempo.js';
 import Doctor from './doctor.js';
 import Paciente from './paciente.js';
 export default class cita {
+_fecha;
+_hora;
+_doctor;
+_paciente;
   /**
    *
    * @param {Fecha} fecha

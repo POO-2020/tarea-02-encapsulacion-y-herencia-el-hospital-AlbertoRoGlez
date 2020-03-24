@@ -1,4 +1,7 @@
 export default class Nombre {
+_nombre;
+_apellidoPaterno;
+_apellidoMaterno;
   /**
    *
    * @param {string} nombre
